@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+}
+body{
+    height: auto;
+}
+
+
+
+/* this is for the loading screen*/
+
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loading-container img {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .loading-container.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease-out, visibility 3s ease-out;
+  }
+
+
+.loader {
+    position: fixed;
+    background-color: #252525;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    animation: move 2.6s infinite;
+  }
+  
+  .loader img {
+    display: block;
+    margin: auto;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  
+  .loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease-out, visibility 3s ease-out;
+  }
+
+
+
+
+/*This is for the background image*/
+#service video{
+    width: 100% ;
+ }
+
+ /*This is for the text in the center of the image*/
+.card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Marck Script";
+    text-align: center;
+    background:rgba(63, 63, 63, 0.5);
+    font-size: 1.6em;
+    color: black;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;   
+    padding: 20px;
+    
+
+}
+
+
+
+

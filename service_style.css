@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+}
+body{
+    height: auto;
+}
+
+.navbar-custom {
+  background-color: #f1e9e3;
+}
+
+
+
+.nav-item{
+  padding: 15%;
+  text-align: center;
+}
+
+/* this is for the loading screen*/
+
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loading-container img {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .loading-container.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease-out, visibility 3s ease-out;
+  }
+
+
+.loader {
+    position: fixed;
+    background-color: #252525;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    animation: move 2.6s infinite;
+  }
+  
+  .loader img {
+    display: block;
+    margin: auto;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  
+  .loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease-out, visibility 3s ease-out;
+  }
+  
+
+
+/*This is for the first image*/
+#service video{
+   width: 100% ;
+}
+
+
+
+/*This is for the text in the senter of the image*/
+.card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Marck Script", cursive;
+    text-align: center;
+    background:rgba(63, 63, 63, 0.5);
+    font-size: 1.6em;
+    color: black;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;   
+    padding: 20px;
+    
+
+}
+
+
+/*This is for the text below the images of the services*/
+.name{
+    margin: 0 auto;
+}
+
+
+/*This is for the images of the service that we offer*/
+#service{
+    background-color: #f1e9e3;
+    
+}
+
+
+#service ul {
+    list-style: none;
+    margin: 150px;
+    margin: 0 auto; 
+    padding: 10% ;
+	text-align: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+    list-style: none;
+    font-size: 3em;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;   
+    
+}
+
+#service li {
+	background-color: #b66f2d;
+	padding: 1%;
+	border-radius: 20px; 
+    
+}
+
+
+
+#service .name{
+    background:rgba(63, 63, 63, 0.6);
+    padding: 1px;
+    
+}
+.image{
+    height: auto;
+	max-width: 100%;
+    border-radius: 10px;
+}
+
+
+/*This is for the carousel before the footer*/
+
+#carouselExampleIndicators {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+
+#carouselExampleIndicators img{
+    border-radius: 20px;
+  } 
+
+
+/*This is the style for the footer*/
+footer{
+    background-color: rgba(63, 63, 63, 0.6);
+}
+/*This is for the icons in the footer*/
+.icons{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.icons a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: rgb(194, 255, 255);
+    margin: 0 0px;
+    transition: .5s ease;
+}
+
+.icons a .fa-brands{
+    font-size: 30px;
+    line-height: 80px ;
+}
+.icons a .fa-solid{
+    font-size: 30px;
+    line-height: 80px ;
+}
+.icons a:hover{
+    transition: .5s ease-in;
+    background: rgb(194, 255, 255);
+    color: rgba(63, 63, 63, 0.6);
+}
+
+
+
+
+
+
+
+
+
